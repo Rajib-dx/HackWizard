@@ -71,8 +71,6 @@ button {
     margin-top: 20px;
     margin-right: 10px;
 }
-
-
 button:hover {
     background-color: #e3c013; 
 }
@@ -80,11 +78,7 @@ button:hover {
 image-preview {
     flex: 1;
     text-align: center;
-   
-   
 }
-
-
 .image-preview {
     display:flex;
     align-items: center;
@@ -142,7 +136,6 @@ image-preview {
 .image-preview img {
     max-width: 100px;
     max-height: 100px;
-    
 }
 }
 

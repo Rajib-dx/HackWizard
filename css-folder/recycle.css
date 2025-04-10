@@ -24,12 +24,12 @@ body {
     border-color: black;
     color: white;
     margin-bottom: 300px;
-    margin-top: -40px;
+  
 }
 
 h1 {
     text-align: center;
-    color: #2ed633; /* Green color for headings */
+    color: #ffffff; /* Green color for headings */
 }
 
 .form-container {
@@ -59,6 +59,7 @@ textarea {
     border: 1px solid white;
     border-radius: 4px;
     color: white;
+    box-shadow: 0 0 5px #ffffff;
 }
 
 button {
@@ -72,25 +73,27 @@ button {
     margin-top: 20px;
     margin-right: 15px;
 }
-
-
 button:hover {
     background-color: #45a049; 
 }
 
 .image-preview {
-    flex: 1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    padding-left: 50px;
 }
 
 .image-preview img {
-    max-width: 100%;
+    max-width: auto;
+    max-height: 250px;
     border-radius: 5px;
     margin-top: 10px;
 }
 .image-preview {
-    border: 2px dashed #4CAF50; 
-    padding: 1px; 
+    border: 2px dashed #ffde3b; 
+    padding: 7px; 
     background-color: transparent; 
     border-radius: 5px; 
     text-align: center; 
@@ -99,9 +102,10 @@ button:hover {
     height: auto;
     width: 200px;
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the left */
-    position: relative; /* Position relative for absolute positioning */
+    flex-direction: column; 
+    align-items: flex-start; 
+    position: relative; 
+    box-shadow: 0 0 5px #ffde3b;
 }
 
 
@@ -115,3 +119,16 @@ button:hover {
     align-items: center; /* Align items vertically in the center */
 }
 
+@media(max-width:750px){
+    
+    .container {
+        display:flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+        max-width: 500px;
+        margin: 30px auto;
+        background-color: transparent;
+        margin-bottom: 200px;
+    }
+
+    }
